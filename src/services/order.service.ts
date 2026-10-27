@@ -89,7 +89,7 @@ export class OrderService {
     return cart;
   }
 
-  // Provera da li korisnik ima dostavljenu porudžbinu za datu biljku
+  
   static userHasDeliveredPlant(userId: number, plantId: number): boolean {
     const cart = this.getCart(userId);
     if (!cart || !cart.items) return false;
